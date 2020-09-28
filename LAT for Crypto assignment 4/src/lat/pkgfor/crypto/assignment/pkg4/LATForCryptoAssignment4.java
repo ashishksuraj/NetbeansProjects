@@ -20,9 +20,10 @@ public class LATForCryptoAssignment4 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner scan = new Scanner(System.in);
-        int[] sbox = {9, 5, 13, 7, 14, 11, 12, 8, 7, 10, 6, 9, 9, 15, 3, 1};
-        int[][] lat = new int[16][5];
+        int[] sbox = {9, 5, 13, 7, 14, 11, 12, 8, 7, 10, 6, 9, 9, 15, 3, 1}; //sbox used in hw3
+        int[][] lat = new int[16][5]; 
         int a = 0;
+        //filling array with the binary form of the elements from sbox
         for (int i = 0; i < 16; i++) {
             lat[a][0] = sbox[i];
             a++;
